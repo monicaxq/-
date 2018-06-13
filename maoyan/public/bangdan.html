@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/bangdan.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<!--导航-->
+<header>
+    <nav>
+        <div class="daohang_1">
+            <a href="shouye.html"><img src="../images/logo_s.png" alt=""/></a>
+            <select name="citu" id="">
+                <option value="CD">成都</option>
+                <option value="MY">绵阳</option>
+                <option value="YB">宜宾</option>
+                <option value="LZ">泸州</option>
+                <option value="DY">德阳</option>
+            </select>
+        </div>
+        <div class="daohang_2">
+            <ul>
+                <li><a href="shouye.html">首页</a></li>
+                <li><a href="dianying.html">电影</a></li>
+                <li><a href="bangdan.html">榜单</a></li>
+                <li><a href="zixun.html">热点</a></li>
+            </ul>
+        </div>
+        <div class="daohang_3">
+            <input type="text" placeholder="找影视剧、影人、影院"/><i class="fangdajing"></i>
+            <a href="denglu.html"><img src="../images/yonghutouxiang.png" alt=""/></a>
+            <!-- <a href="denglu.html"><i class="xiajiantou"></i></a> -->
+            <ul id="user">
+
+                </ul>
+        </div>
+    </nav>
+</header>
+
+  <article class="zhongjian">
+      <!--第二个导航-->
+      <section class="daohang">
+          <ul id="exam">
+              <li><a href="#d">热映口碑榜</a> <i></i></li>
+              <li><a href="#s" >最受期待榜</a> <i></i></li>
+              <li><a href="#d">国内票房榜</a> <i></i></li>
+              <li><a href="#p">北美票房榜</a> <i></i></li>
+              <li><a href="#f">TOP100榜</a> <i></i></li>
+          </ul>
+      </section>
+      <!--更新提示-->
+      <section class="gengxin">
+          <p ><span id="data"> </span> <span>已更新</span></p>
+          <p>榜单规则：将昨日国内热映的影片，按照评分从高到低排列前10名，每天上午10点更新。相关数据来源于“猫眼专业版”及“猫眼电影库”</p>
+      </section>
+  </article>
+<article id="example">
+    <!-- <section class="pailie">
+        <ul>
+            <li><a href="xiangqing.html">
+                <div>  <i></i> </div>
+                <div>  <img src="../images/0fec3a88133e569ca0067e12f7ad0b80987252.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                        <p>战狼</p>
+                        <p>主演：吴京，弗兰克·格里罗，吴刚</p>
+                        <p>上映时间：2017-10-01</p>
+
+                    <em>9.<span>3</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section> -->
+    <!--影片介绍-->
+    <!-- <section class="pailie">
+        <ul>
+            <li><a href="xiangqing.html">
+                <div class="huangkuai"> <em>2</em>  </div>
+                <div>  <img src="../images/__40811615__5745234.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>逗鸟外传：萌宝满天飞</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>9.<span>0</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section> -->
+    <!-- <section class="pailie">
+        <ul>
+            <li><a href="xiangqing.html">
+                <div class="huangkuai"> <em>3</em> </div>
+                <div>  <img src="../images/0e3a853a93d342f5d071f5e0867cbfb7518640.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>爱神箭</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>9.<span>0</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="xiangqing.html">
+                <div class="huikuai">  <em>4</em> </div>
+                <div>  <img src="../images/1b062f640e5f93036086c7265ad7131a584340.png" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>机械师2：复活</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>9</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="#v">
+                <div class="huikuai"> <em>5</em> </div>
+                <div>  <img src="../images/1c941143ac74b89cf16a4884585131be164722.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>勇士</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>8</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="#v">
+                <div class="huikuai">  <em>6</em> </div>
+                <div>  <img src="../images/02ac72c0e8ee2987f7662ad921a2acc7999433.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>从你的全世界路过</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>7</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="#v">
+                <div class="huikuai">  <em>7</em> </div>
+                <div>  <img src="../images/2b73d01ae68a1972f7f3e235127c8bb9723265.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>鲁滨逊漂流记</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>7</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="#v">
+                <div class="huikuai">  <em>8</em> </div>
+                <div>  <img src="../images/2bad4d79ed1d2ca6768ec6d6bdd97c5e588735.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>地球四季</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>7</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="#v">
+                <div class="huikuai"> <em>9</em> </div>
+                <div>  <img src="../images/2bad4d79ed1d2ca6768ec6d6bdd97c5e588735.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>七月与安生</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>7</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+    <section class="pailie">
+        <ul>
+            <li><a href="#v">
+                <div class="huikuai">  <em>10</em> </div>
+                <div>  <img src="../images/2bad4d79ed1d2ca6768ec6d6bdd97c5e588735.jpg" alt="mei"/></div>
+                <div class="wenzi">
+                    <p>圆梦巨人</p>
+                    <p>主演：张涵予，彭于晏，冯文娟</p>
+                    <p>上映时间：2016-09-30</p>
+
+                    <em>8.<span>4</span></em>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+   -->
+</article>
+<!--底部-->
+<section class="mao">
+    <img src="../images/cat.png" alt="ding"/>
+</section>
+<footer>
+    <p> &copy; 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489-1京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+    <p>北京猫眼文化传媒有限公司</p>
+</footer>
+<script src="./js/bangdan.js"></script>
+<script src="./js/username.js"></script>
+</body>
+</html>

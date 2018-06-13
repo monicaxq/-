@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/zhuce.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <style>
+     .pass{
+        color: forestgreen;
+    }
+    
+    .unpass{
+        color: firebrick;
+    }
+    </style>
+   
+    
+</head>
+<body>
+  <header>
+      <a href="shouye.html"><img src="../images/logo_s.png" alt="ar"/></a>
+
+  </header>
+  <form action="/reg" method="post" id="myForm">
+  <article>
+      <p>
+          <label for="shoujihao" >手机号</label>
+          <input type="text" name="phone" id="phonenum" maxlength="11" placeholder="注册成功后，全美团通用"/>
+          <span id="phone_info"></span>
+      </p>
+      <p><input type="button" value="免费获取短信动态码"  class="dongtai"/></p>
+      <p>
+          <label for="dongtai">短信动态码</label>
+          <input type="text" id="code" maxlength="6" class="check_txt"/>
+          <span id="code_info"></span>
+      </p>
+      <p>
+          <label for="chuangjian">创建密码</label>
+          <input type="password" class="check_txt" name="pwd" id="pwd"/>
+          <span></span>
+      </p>
+      <p class="color">
+          <span id="r">弱</span>
+          <span id="o">中</span>
+          <span id="g">强</span>
+      </p>
+      <p>
+          <label for="queren">确认密码</label>
+          <input type="password" class="check_txt" id="repwd"/>
+          <span id="pwd_info"></span>
+      </p>
+      <p>
+          <input type="submit" id="submit" value="同意以下协议并注册"/>
+          <span id="tishi"></span>
+      </p>
+      <p><a href="">《美团网用户协议》</a></p>
+  </article>
+</form>
+<footer>
+    <p>
+        &copy;meituan.com  京icp证0838383号  京公网备2838823847284号
+    </p>
+</footer>
+<script src="./js/reg.js"></script>
+</body>
+</html>

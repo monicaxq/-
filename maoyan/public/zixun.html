@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/zixun.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<!--导航-->
+<header>
+    <nav>
+        <div class="daohang_1">
+            <a href="shouye.html"><img src="../images/logo_s.png" alt=""/></a>
+            <select name="citu" id="">
+                <option value="CD">成都</option>
+                <option value="MY">绵阳</option>
+                <option value="YB">宜宾</option>
+                <option value="LZ">泸州</option>
+                <option value="DY">德阳</option>
+            </select>
+        </div>
+        <div class="daohang_2">
+            <ul>
+                <li><a href="shouye.html">首页</a></li>
+                <li><a href="dianying.html">电影</a></li>
+                <li><a href="bangdan.html">榜单</a></li>
+                <li><a href="zixun.html">热点</a></li>
+            </ul>
+        </div>
+        <div class="daohang_3">
+            <input type="text" placeholder="找影视剧、影人、影院"/><i class="fangdajing"></i>
+            <a href="denglu.html"><img src="../images/yonghutouxiang.png" alt=""/></a>
+            <!-- <a href="denglu.html"><i class="xiajiantou"></i></a> -->
+            <ul id="user">
+
+                </ul>
+        </div>
+    </nav>
+</header>
+<!--主题内容-->
+    <article>
+        <!--左-->
+        <div class="zuo">
+            <div id="refer">
+            <!-- <section><p>专访导演郭敬明 : 用CG特效最大限度的实现 想象力</p></section>
+            <section><p>猫眼电影 &nbsp;&nbsp;09-22&nbsp;&nbsp; 14:56 &nbsp;&nbsp;<img src="../images/icon_05.png" alt=""/>22448</p></section>
+            <section>郭敬明,作家 ? 导演 ? 写而优则导的转型他不是第一个 , 但却是最有争议的一个 , 电影《迹》从立 项、开拍再到预告片发布 , 质疑声一直都在。经历过《小时代》乐列的票房成功 , 郭数明三个字似乎成了粉丝片的票房保证。</section>
+            <section><img src="../images/g1.png" alt=""/></section>
+            <section>导演本人却并不想被这么定义 , 《爵迹》首次尝试全真人CG特效拍摄 , 是华语电影市场中第一次尝试。如何面对质疑迈出第一步 , 就这一问题猫眼电影在“与子同袍”发布会结束后 , 第一时间采访了导演郭敬明。</section>
+            <section><h2>挑战：利用CG特效最大化的还原真实</h2></section>
+            <section><h2>猫眼电影:华西电影回首次尝试全真人CG,导演是第一个吃螃的人,当初为什么会有这样的选择?</h2></section>
+            <section>8 郭敬明:因为当初在筹备《爵迹》这个项目的时候一直在考虑到底是该实拍还是用CG的形式来实现,因 为各有各的难点,实拍最大的问題是有很多固有突破不了的限制,有些是演员天生没办法做到的事情 包括有一些摂影机到不了的镜位,或是达不到的运动,这些都是限制。</section>
+            <section>全CG的限制就是对演员的微表情很难把控,如果你要还原一个真人,你做一个怪物或是外星人还反倒容 易,跟人不像,稍微有一点喜哀乐大家不会觉得是个问题,没人见过外星人长什么样子。就像《麗 兽》里面吴彦祖演一个兽人,其实不管那个兽人长成什么样子,你都不会觉得奇怪,但是你把它做成吴 产祖的样子,你稍微有一点点不像,观众都会说这个不像,这个就是最大的区别。
+            </section>
+            <section><img src="../images/video.png" alt=""/>
+                <h2>动作捕捉制作特辑</h2></section>
+            <section> 所以当时各自都有很难的地方, <span>我们之所以决定用CG来呈现,是因为《爵迹》首先是一个奇幻的、视觉 为先的电影,如何最大限度的实现它的想象力是最重要的 </span>所以当时决定放弃实拍电影,攻克关于人物 写实度的问题。当时有很简单的方式就是把人做的像动画人,但我们不想把它变成一个没有真实感的纯 动画片,所以我们尽可能的去模拟真实世界的样子,包括真实世界光线、植物、大气、烟露、人的表情 如喜怒哀乐,我们都希望尽可能去还原真实。</section>
+             <section>猫眼电影：说到动作捕捉和CG特效,导演滋请了很多着名的持效公司,应该说耗发了很大的成本和精 力,这个在初期导演有考虑产出问题戓者说在效果上有某种程度的预期吗?</section>
+            <section>郭敬明:如果是同样成本的话,实拍不见得能实现现在这样一个惊艳的效果,所以说CG带来的整个视觉 冲击力是非常震擦的,特别是当你在最终的大银幕上感受的时候,跟实拍是完全不一样的,它的那种特 有的CG电影的风格是你很难用真人去实现的一些东西。</section>
+            <section>猫眼电影：电影用了两年的时间打,导演曾说精细到鬼山泉的发丝、幽从湖底走出身上的水珠都 有精确的计算,制作期间遇到过些不曾预判过的因难?</section>
+            <section>郭敬明:太多太多困难了,因为很多困难是你根本预明不到的。首先是技术的全,比如好莱均的核心 团队就是不会开放这个软件给你使用,你明明知道用这个就能解决这个问题,但他就是不开放给你。所 以你只能自己去摸索,自己写新的程序去解决这个困难。</section>
+            <section>其次是你完全查不出原因怎么会出这个情况,比如说有一个镜头渲染,一切环节反复检查都对,但最后 染出来的头里面陈学冬有一条眉毛就飞了,就不见了,你死活就查不出是什么原因。你检查每一个 环节每一个模型,那条眉毛都在,但就是到最后一个环节里那条眉毛就不见了。因为CG是个电脑生成的 东西,有时候会出现错误、漏洞,或者人为难以预料的事情。</section>
+            <section><img src="../images/g2.png" alt=""/></section>
+            <section>《爵迹》这个电影的体量对整个模型的精度有很高的要求,因为只是在手机上做一个精细的很简单,但 是放在大荧幕上要达到很高的精细度是非常困难的,我们做到后期的时候,每一个技术员工的电脑都升 级到不能再升级。</section>
+            <section>我们之前做的一个城市叫雷恩,几千栋大大小小的建筑,每一个建筑上面成千片瓦片都是3D建模建出来 的,当无数栋房子拼成了一整个城市的时候,我们有一个镜头是穿越整个城市,当所有的建筑拼成一个 城市之后,我们却发现我们再也打不开这个文件,因为它实在是太大,于是我们又回到技术部门,技术 部门写代码默认远的房子用低精度的形式来打开,中景的房子用中精度来打开,近景的房子用非常高 的精度打开,这样才勉强把城市文件调出来。</section>
+            <section><img src="../images/g3.png" alt=""/></section>
+            <section>因为城市的灯火、每扇窗户透出来的光是不一样的,这种东西你没办法在模型里,只能回到技术部门 来写插件帮你实现,所以小到空气里漂浮的一颗一颗的尘埃、大到一条龙、一个岛的的崩場,你看到的 一切都是需要电脑制作出来才能看得到,精确到一个演员的在斑,一,或者肌肉上的一个痕,这 些都需要电脑制作来完成,<span>CG持效就像个黑洞可以无体止的去添加细节。但你添加到一定的极限的时 候,你就再也做不上去了,因为你的时间、预算、人力、物力各方面是有限的,所以说CG电影的可怕就 在于它没有极限,可以迫求到无限制的好。</span> </section>
+            <section><h2>猫眼电影：光的预告片中有大量的打斗场面,跟核拟真人的表情、外表相比,哪个部分实现起来更 难?</h2></section>
+            <section>郭敬明:打斗很简单,越近的写越难,散乱的头发实现起来比段困难。的头发被风吹起来就是一根 根的,每一根就是一个3D模型.你让它动起米的话就要每一根都去做结但是人有+十几万根头发 十几万根一起結没有机器可以拖得动,解决办法就是每十几根头发做一根引导曲,它追随这个引导 曲的去动。</section>
+            <section><img src="../images/346fc81230c1b04550730edc2deca963201044.jpg" alt=""/></section>
+            <section>因为头发和布料的结算都是模拟物理的情况,可以设定风速和方向,但是无法決定它飘成什么样子,就 像你实拍电影拿一个鼓风机去吹头发,但是你不知道你吹出来好不好看,有可能飞的特别丑,有可能飞 的不舒服,但这个你在染之前都不知道,你只能一遍一遍的去试,突然试到有一遍飞的特别好的,赶 紧存下来。越软的东西在电影里是越难实现的,反倒是很硬的盔甲、외之类的更容易通过槟型复现,所 以在电影里水是最难做的。 但在电影里最后40分钟是在海上面打的,当时做的时候也是把大家逼疯了。</section>
+            <section><img src="../images/95245ce20255bc6a25505aa3095fdb8b267622.jpg" alt=""/></section>
+            <section><h2>猫眼电影：在之前的小时代系列中.导演有过360度长锐头的尝试,迹里有哪些新的尝试吗?</h2></section>
+            <section>郭敬明:《際迹》的长头更疯狂,一个是开篇的长头,是从宇宙开始一路下到地球,以前调度从 一楼到三楼就已经很远了,这次是从太空一路下降到地球,到城市市的上空穿越云层到小镇街道,再看到 陈学餐在前面街道跑,一路推推推推到他头发丝拍一个极限的特第,然后跟着他穿越整个城市,一路 走过几百个群演河,几百个阪,卖鱼的、打铁的、和种督样的欢烟、建筑,你看到的一切就是各种备 样的棱型打造出来的真实的世界,这个调底大有分部钟钟,然后中间从下雷的夜晚到、到太空里 的那种不断变换的光线。 <span>CG电影有一个很难的地方就是光战的变换,跟实拍电影不同,实拍是什么光就 是什么光。CG电影里所有的光都是后期做的,它的光放,它扫过锐头产生的那种灯脚都是电脑做上去 的,所以光线在一个锐头里变的复张就难做。</span> 这个头从去年2用份开始做,到现在才做完。</section>
+            <section><img src="../images/0121dc1ef373947f952bddac8f34f905207920.jpg" alt=""/></section>
+            <section> 还有一个头是陈学冬从山上跑下一路教吴亦凡的擬头也是非第复杂,这个镜头有一分多钟,实拍根本 不可能拍出这个镜头,除非你让摄影师扛着机器跳悬才有可能拍到,但在CG电影里有很多空间能实现 这个镉到底的运行,但这个对演员的要求也变高了,他要把所有的动作连接起来,通过动作捕捉的人 员把他的动作进行合,让他看起来是连串的动作,所以他在表演的时候每一个切开的地方他都要记住 自己动作的切点在哪里,这个镜头也用了6、7个月的时间,而且这个跑下山的擬头中间有一百多只各种 各样的魂曾,句括龙、蜥蝎等。每一只蜥場的动态血、皮肤等都要用CG特效制作出来。在剧本讨论阶段 这两个头提出来时,几乎所有人都说导演这两个镜头可不可以删掉,当时想说既然做了CG电影不能怎 么简单怎么做,删掉感觉可惜了,于是就想挑战看看。</section>
+            <section>猫眼电影：大家对CG特效这个概念还比较陌生,CG特效会有多大制作成本以及哪些制作方法,导演可以 谈一下吗?</section>
+            <section>CG电影和实拍电影有一个最大的区别就是实拍电影是光学成像,所有东西在你拍下来的瞬间无 论放大缩小全部都在,这是光学成像的原理。<span>但是CG电影中你所看到的东西都是在渲染的时候,根据物 体在画面上占据的大小自动渲染出符合那个大小的精度,这就要求你的画面不能放大也不能缩小,縮小 就不是原来的精度,所以必须按照标准尺す来计算,这也是为什么大家在手机上看所有的细节大量的丢 失。</span> 你不能看到人脸上的皱纹、毛孔,但这些其实全部都在,这也是我们比较泪的原因,如何才能星 现给观众我们真正做出来的东西。</section>
+            <section><img src="../images/g4.png" alt=""/></section>
+            <section>在第一版预告片中大家提到的一些问题我们还是有改进,比如说肤质不够细。或者不够写实,我们后 明都加了很多很写实的东西,甚至放弃了一些特别美的,比如女孩都希自己皮肤别好,但是CG文 如果特别好会显得特別假,我们会跟演员商量还原你的的一些缩E印.毛孔取者小近之类的,大家都很理 解,因为一般实拍就是盖很原的粉,光一打关到不行,CG电影如甲这样做就会很假,CG必须反过来做 比如眼角一些纹之必的都有去强化和加深。
+
+            </section>
+            <section><img src="../images/g5.png" alt=""/></section>
+            <section><h2>猫眼电影：《爵迹》选择大量明星加盟,这方面导演有哪些自己的考量吗?</h2></section>
+            <section>郭敬明:我觉得其实每一个导滴他在选择滴员的时候,完全忽略演员的商业价值是不可能的,电影用明 星是每一个导演都会去追求的事情,但是不是说我用了明星就不对了。</section>
+            <section><img src="../images/g6.png" alt=""/></section>
+            <section>你不能说追求票房的导演他就是不好的导演,只是你要很客观的看目前中国的电影市场,如果说现在中 国电影票房从几百亿变成几十亿,我不相信这个行业会发展的好。就像好菜坞也不能一直追求文艺的小 众的电影,如果说中国的导演所有都在拍特别小众、特别文艺、特别个人表达的电影,完全没有商业 片、类型片立足的空间的话,这对整个电影市场来说我不觉得是一件好事。<span>我希坦是百花齐放的,有些 导演擅长拍文艺片,那他就去拍文艺片:有些擅长拍商业片,那他就去拍商业片,这个是观众的进择 本身不存在善恶或者对错。</span></section>
+            <section>改变：做一次西方设定下的东方尝试</section>
+            <section>猫眼电影：从作家到导演,经历了《小时代》系列,现在是不是更适应导演这个身份?</section>
+            <section>郭敬明:我其实都很离欢,现在我也还在写书,两者是完全不一样的盛觉,电影实现你所有的想象还是 很困难的,会到很多的限制。但是写作会彻底解放你的想象力,小说讲究的是i通,它会融合你所有 的感知。就像一个可爱的女孩给人的感觉就像一块很好吃的的,在说中你利用通,将你对女孩的 感觉和味觉联乐在一起,观众就会觉得“啊,原来是那样的感觉”。但是电影是拍不出来一个女孩像 糕一样好吃这样一个觉,所以这是两个截然不同的载体,所以你在两个方面下的功夫和攻克的技术道 点是不一样的。</section>
+            <section><img src="../images/9971687baa2a048777df437420f1d576408099.jpg" alt=""/><img src="../images/9971687baa2a048777df437420f1d576408099.jpg" alt=""/><img src="../images/9971687baa2a048777df437420f1d576408099.jpg" alt=""/><img src="../images/9971687baa2a048777df437420f1d576408099.jpg" alt=""/></section>
+            <section><h2>猫眼电影：《小时代》和《爵迹》都属于群像刻画,但后者的世界观更宏大,有观众说《爵迹》群像的 刻画堪比《冰火》,相比《小时代》导演有了哪些改变?</h2></section>
+            <section><p>郭敬明:《爵迹》人物真的非常多,在小说里有三十几个人物,而且每个都是主角,所以在做电影的时 候很头痛这个问题,真的不知道该怎么改,当日时就说那就删吧,大刀阔斧的删,不要一上来就拍那么 多。《冰火》更多的还是国家和国家之间的斗争、权利利的争夺,《的迹》更多的集中在个人的命运上 而且更魔幻、更疯狂一点。在这一点上两者还是有区别的。<span>相对来讲《迹》是一个西方设定上的奇幻 故事,但是中间有很多东方的成分存在。</span>《冰火》是个纯西方的故事,在这方面还是不一样的就我个 人而言,还是很喜欢这种群像的创作,包括从《小时代》开始很少写那种男一、女一就结来的故事,我 比较喜欢很多人的数放事,能激发我的创作热情。</p>
+                <p>（文/糖醋小排）</p>
+            
+            </section> -->
+
+        </div>
+            <section class="fourfiv">
+                <span><img src="../images/icon_06.png" alt=""/>35</span>
+                <span><img src="../images/icon_07.png" alt=""/>分享</span>
+            </section>
+           
+           
+            <section class="hot_talk" id="hot_talk">
+                <p>热门评论</p>
+                <!-- <div>
+                    <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+                    <img src="../images/v2.png" alt=""/>
+                    <div>
+                        <div class="pinglun">
+                            <p>duangduangduang</p>
+
+                            <p>09-28 徐州</p>
+
+                            <p>都懒得喷你，一拉到底</p>
+                        </div>
+                        <span><img src="../images/icon_08.png" alt=""/>151</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+                    <img src="../images/v2.png" alt=""/>
+                    <div>
+                        <div class="pinglun">
+                            <p>duangduangduang</p>
+
+                            <p>09-28 徐州</p>
+
+                            <p>都懒得喷你，一拉到底</p>
+                        </div>
+                        <span><img src="../images/icon_08.png" alt=""/>151</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+                    <img src="../images/v2.png" alt=""/>
+                    <div>
+                        <div class="pinglun">
+                            <p>duangduangduang</p>
+
+                            <p>09-28 徐州</p>
+
+                            <p>都懒得喷你，一拉到底</p>
+                        </div>
+                        <span><img src="../images/icon_08.png" alt=""/>151</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+                    <img src="../images/v2.png" alt=""/>
+                    <div>
+                        <div class="pinglun">
+                            <p>duangduangduang</p>
+
+                            <p>09-28 徐州</p>
+
+                            <p>都懒得喷你，一拉到底</p>
+                        </div>
+                        <span><img src="../images/icon_08.png" alt=""/>151</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+                    <img src="../images/v2.png" alt=""/>
+                    <div>
+                        <div class="pinglun">
+                            <p>duangduangduang</p>
+
+                            <p>09-28 徐州</p>
+
+                            <p>都懒得喷你，一拉到底</p>
+                        </div>
+                        <span><img src="../images/icon_08.png" alt=""/>151</span>
+                    </div>
+                </div> -->
+            </section>
+       <section>
+           <p class="newtalk">最新评论</p>
+           <div class="yonghu">
+               <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+               <img src="../images/v2.png" alt=""/>
+               <div class="ming">
+                   <div class="ming_shang">
+                       <div >
+                           <p>Asndjdndns</p>
+                           <p>10-06 宜昌</p>
+                       </div>
+                       <p><a href="#s">举报</a><img src="../images/icon_08.png" alt=""/>赞</p>
+                   </div>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolorem eos et illum praesentium.</p>
+                   <div class="huifu">
+                      <p>回复2929393</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita explicabo ipsa iusto omnis quibusdam quod sequi tempora totam vero!</p>
+                   </div>
+               </div>
+           </div>
+           <div class="yonghu">
+               <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+               <img src="../images/v2.png" alt=""/>
+               <div class="ming">
+                   <div class="ming_shang">
+                       <div >
+                           <p>Asndjdndns</p>
+                           <p>10-06 宜昌</p>
+                       </div>
+                       <p><a href="#s">举报</a><img src="../images/icon_08.png" alt=""/>赞</p>
+                   </div>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolorem eos et illum praesentium.</p>
+                   <div class="huifu">
+                       <p>回复2929393</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita explicabo ipsa iusto omnis quibusdam quod sequi tempora totam vero!</p>
+                   </div>
+               </div>
+           </div>
+           <div class="yonghu">
+               <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+               <img src="../images/v2.png" alt=""/>
+               <div class="ming">
+                   <div class="ming_shang">
+                       <div >
+                           <p>Asndjdndns</p>
+                           <p>10-06 宜昌</p>
+                       </div>
+                       <p><img src="../images/icon_08.png" alt=""/>赞</p>
+                   </div>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolorem eos et illum praesentium.</p>
+                   <div class="huifu">
+                       <p>回复2929393</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita explicabo ipsa iusto omnis quibusdam quod sequi tempora totam vero!</p>
+                   </div>
+               </div>
+           </div>
+           <div class="yonghu">
+               <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+               <img src="../images/v2.png" alt=""/>
+               <div class="ming">
+                   <div class="ming_shang">
+                       <div >
+                           <p>Asndjdndns</p>
+                           <p>10-06 宜昌</p>
+                       </div>
+                       <p><img src="../images/icon_08.png" alt=""/>赞</p>
+                   </div>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolorem eos et illum praesentium.</p>
+               </div>
+           </div>
+           <div class="yonghu">
+               <img src="../images/7dd82a16316ab32c8359debdb04396ef2897.png" alt="ff"/>
+               <img src="../images/v2.png" alt=""/>
+               <div class="ming">
+                   <div class="ming_shang">
+                       <div >
+                           <p>Asndjdndns</p>
+                           <p>10-06 宜昌</p>
+                       </div>
+                       <p><img src="../images/icon_08.png" alt=""/>赞</p>
+                   </div>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis dolorem eos et illum praesentium.</p>
+               </div>
+           </div>
+       </section>
+            <section class="more">
+                <a href="">查看更多回复 <img src="../images/icon11.png" alt=""/></a>
+            </section>
+
+        </div>
+        <!--右-->
+        <div class="you">
+           <p>相关电影</p>
+            <img src="../images/48ca0035795cf431bb0b4971f37f49e41862020.jpg" alt="s"/>
+
+            <p>爵迹</p>
+
+            <i>  7.9</i>
+        </div>
+    </article>
+<section class="mao">
+    <img src="../images/cat.png" alt="ding"/>
+</section>
+<!--底部-->
+<footer>
+    <p> &copy; 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489-1京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+    <p>北京猫眼文化传媒有限公司</p>
+</footer>
+<script src="./js/zixun.js"></script>
+<script src="./js/username.js"></script>
+</body>
+</html>

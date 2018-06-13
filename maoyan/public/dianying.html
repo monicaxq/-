@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/dianying.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<!--导航-->
+    <header>
+        <nav>
+            <div class="daohang_1">
+                <a href="shouye.html"><img src="../images/logo_s.png" alt=""/></a>
+                <select name="citu" id="">
+                    <option value="CD">成都</option>
+                    <option value="MY">绵阳</option>
+                    <option value="YB">宜宾</option>
+                    <option value="LZ">泸州</option>
+                    <option value="DY">德阳</option>
+                </select>
+            </div>
+            <div class="daohang_2">
+                <ul>
+                    <li><a href="shouye.html">首页</a></li>
+                    <li><a href="dianying.html">电影</a></li>
+                    <li><a href="bangdan.html">榜单</a></li>
+                    <li><a href="zixun.html">热点</a></li>
+                </ul>
+            </div>
+            <div class="daohang_3">
+                <input type="text" placeholder="找影视剧、影人、影院"/><i class="fangdajing"></i>
+                <a href="denglu.html"><img src="../images/yonghutouxiang.png" alt=""/></a>
+                <!-- <a href="denglu.html"><i class="xiajiantou"></i></a> -->
+                <ul id="user">
+
+                    </ul>
+            </div>
+        </nav>
+    </header>
+<!--第二个导航-->
+    <div class="daohang">
+        <ul id="classmovie">
+            <li><a href="#d">正在热映</a> <i></i></li>
+            <li><a href="#s">即将上映</a> <i></i></li>
+            <li><a href="#d">经典影片</a> <i></i></li>
+        </ul>
+    </div>
+    <article >
+        <div id="box">
+            <section class="fenglei">
+                <span>类型：</span>
+                <ul id="type">
+                    <li><input type="radio" name="field_type" id="quanbu"/><label for="quanbu">全部</label></li>
+                    <li><input type="radio" name="field_type" id="leixing"/><label for="leixing">爱情</label></li>
+                    <li><input type="radio" name="field_type" id="leixing1"/><label for="leixing1">喜剧 </label></li>
+                    <li><input type="radio" name="field_type" id="leixing2"/><label for="leixing2">动画</label></li>
+                    <li><input type="radio" name="field_type" id="leixing3"/><label for="leixing3">剧情</label></li>
+                    <li><input type="radio" name="field_type" id="leixing4"/><label for="leixing4">恐怖</label></li>
+                    <li><input type="radio" name="field_type" id="leixing5"/><label for="leixing5">惊悚</label></li>
+                    <li><input type="radio" name="field_type" id="leixing6"/><label for="leixing6">科幻</label></li>
+                    <li><input type="radio" name="field_type" id="leixing7"/><label for="leixing7">动作</label></li>
+                    <li><input type="radio" name="field_type" id="leixing8"/><label for="leixing8">悬疑</label></li>
+                    <li><input type="radio" name="field_type" id="leixing9"/><label for="leixing9">犯罪</label></li>
+                    <li><input type="radio" name="field_type" id="leixing10"/><label for="leixing10">冒险</label></li>
+                    <li><input type="radio" name="field_type" id="leixing11"/><label for="leixing11">战争</label></li>
+                    <li><input type="radio" name="field_type" id="leixing12"/><label for="leixing12">奇幻</label></li>
+                    <li><input type="radio" name="field_type" id="leixing13"/><label for="leixing13">运动</label></li>
+                    <li><input type="radio" name="field_type" id="leixing14"/><label for="leixing14">家庭</label></li>
+                    <li><input type="radio" name="field_type" id="leixing15"/><label for="leixing15">古装</label></li>
+                    <li><input type="radio" name="field_type" id="leixing16"/><label for="leixing16">武侠</label></li>
+                    <li><input type="radio" name="field_type" id="leixing17"/><label for="leixing17">西部</label></li>
+                    <li><input type="radio" name="field_type" id="leixing18"/><label for="leixing18">历史</label></li>
+                    <li><input type="radio" name="field_type" id="leixing19"/><label for="leixing19">传记</label></li>
+                    <li><input type="radio" name="field_type" id="leixing20"/><label for="leixing20">情色</label></li>
+                    <li><input type="radio" name="field_type" id="leixing21"/><label for="leixing21">歌舞</label></li>
+                    <li><input type="radio" name="field_type" id="leixing22"/><label for="leixing22">黑色电影</label></li>
+                    <li><input type="radio" name="field_type" id="leixing23"/><label for="leixing23">短片</label></li>
+                    <li><input type="radio" name="field_type" id="leixing24"/><label for="leixing24">其他</label></li>
+                </ul>
+            </section>
+            <section class="fenglei">
+                <span>区域：</span>
+                <ul id="area"> 
+                    <li><input type="radio" name="field_area" id="quanbu2"/><label for="quanbu2">全部</label></li>
+                    <li><input type="radio" name="field_area" id="quyu"/><label for="quyu">大陆</label></li>
+                    <li><input type="radio" name="field_area" id="quyu1"/><label for="quyu1">美国</label></li>
+                    <li><input type="radio" name="field_area" id="quyu2"/><label for="quyu2">韩国</label></li>
+                    <li><input type="radio" name="field_area" id="quyu3"/><label for="quyu3">日本</label></li>
+                    <li><input type="radio" name="field_area" id="quyu4"/><label for="quyu4">中国香港</label></li>
+                    <li><input type="radio" name="field_area" id="quyu5"/><label for="quyu5">中国台湾</label></li>
+                    <li><input type="radio" name="field_area" id="quyu6"/><label for="quyu6">泰国</label></li>
+                    <li><input type="radio" name="field_area" id="quyu7"/><label for="quyu7">印度</label></li>
+                    <li><input type="radio" name="field_area" id="quyu8"/><label for="quyu8">法国</label></li>
+                    <li><input type="radio" name="field_area" id="quyu9"/><label for="quyu9">大陆</label></li>
+                    <li><input type="radio" name="field_area" id="quyu10"/><label for="quyu10">英国</label></li>
+                    <li><input type="radio" name="field_area" id="quyu11"/><label for="quyu11">俄罗斯</label></li>
+                    <li><input type="radio" name="field_area" id="quyu12"/><label for="quyu12">意大利</label></li>
+                    <li><input type="radio" name="field_area" id="quyu13"/><label for="quyu13">西班牙</label></li>
+                    <li><input type="radio" name="field_area" id="quyu14"/><label for="quyu14">大陆</label></li>
+                    <li><input type="radio" name="field_area" id="quyu15"/><label for="quyu15">德国</label></li>
+                    <li><input type="radio" name="field_area" id="quyu16"/><label for="quyu16">波兰</label></li>
+                    <li><input type="radio" name="field_area" id="quyu17"/><label for="quyu17">其他</label></li>
+                </ul>
+            </section>
+            <section class="fenglei niandai_xian">
+                <span>年代：</span>
+                <ul id="time" >
+                    <li><input type="radio" name="field_time" id="niandai"/><label for="niandai">2017以后</label></li>
+                    <li><input type="radio" name="field_time" id="niandai1"/><label for="niandai1">2017 </label></li>
+                    <li><input type="radio" name="field_time" id="niandai2"/><label for="niandai2">2016</label></li>
+                    <li><input type="radio" name="field_time" id="niandai3"/><label for="niandai3">2015</label></li>
+                    <li><input type="radio" name="field_time" id="niandai4"/><label for="niandai4">2014</label></li>
+                    <li><input type="radio" name="field_time" id="niandai5"/><label for="niandai5">2013 </label></li>
+                    <li><input type="radio" name="field_time" id="niandai6"/><label for="niandai6">2012</label></li>
+                    <li><input type="radio" name="field_time" id="niandai7"/><label for="niandai7">2011 </label></li>
+                    <li><input type="radio" name="field_time" id="niandai8"/><label for="niandai8">2000-2010</label></li>
+                    <li><input type="radio" name="field_time" id="niandai9"/><label for="niandai9">90年代</label></li>
+                    <li><input type="radio" name="field_time" id="niandai10"/><label for="niandai10">80年代</label></li>
+                    <li><input type="radio" name="field_time" id="niandai11"/><label for="niandai11">70年代 </label></li>
+                    <li><input type="radio" name="field_time" id="niandai12"/><label for="niandai12">更早</label></li>
+                </ul>
+            </section>
+        </div>
+        <section>
+            <div class="xuanze">
+                  <div id="ordonner"> 
+                      <input type="radio" id="remeng" name="paixu"  checked="true"/>
+                      <label for="remeng">按热门排序</label>
+                      <input type="radio" name="paixu"  id="shijian"/>
+                      <label for="shijian">按时间排序</label>
+                      <input type="radio" name="paixu"  id="pingjia"/>
+                      <label for="pingjia">按评价排序</label>
+                  </div>
+                <span>
+                            <input type="checkbox" id="bofang"/>
+                    <label for="bofang">可播放</label>
+                </span>
+            </div>
+        </section>
+        <section class="yingpian">
+            <ul id="show">
+                <!-- <li>
+                    <a href="xiangqing.html">
+                    <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                    <p>反贪风暴</p>
+                    <em>8.3</em>
+                     </a>
+                </li>
+                <li>
+                    <a href="xiangqing.html">
+                        <img src="../images/05ee7fcf0ae02b3bf955d7f5afafa73d442416.png" alt=""/>
+                        <p>使徒行者</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="xiangqing.html">
+                        <img src="../images/2d38a7c91ed866af1a08adbee28ffa8a157736.jpg" alt=""/>
+                        <span><img src="../images/3dmax.png" alt=""/></span>
+                        <p>盗墓笔记</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/6b3b18b80d633e6a5681ce47262922cd1047468.jpg" alt=""/>
+                        <span><img src="../images/3dmax.png" alt=""/></span>
+                        <p>魔兽</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/6ba0abf2baf9a1254436aeff75af2f9b359044.jpg" alt=""/>
+                        <span><img src="../images/3d.png" alt=""/></span>
+                        <p>美人鱼</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/2fba1ccb397c00611e9951b78379bf541809429.jpg" alt=""/>
+                        <span><img src="../images/3dmax.png" alt=""/></span>
+                        <p>绝地逃亡</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/8ff9675ab73cdc31a9714a918a9a83d7223841.png" alt=""/>
+                        <p>追凶者也</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/a21282b0553f315e1b15df98f70d6f5c912588.png" alt=""/>
+                        <p>九条命</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/ab255e7ef080166ff0e1d178e2b7a6fc385464.jpg" alt=""/>
+                        <span><img src="../images/3dmax.png" alt=""/></span>
+                        <p>自杀小队</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                        <p>微微一笑很倾城</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/acfd524fb61272a1db1d1c5bf44a260620955040.jpg" alt=""/>
+                        <span><img src="../images/3d.png" alt=""/></span>
+                        <p>大鱼海棠</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/b9a4d6132987f613ad64012d51618b22771452.jpg" alt=""/>
+                        <span><img src="../images/3dmax.png" alt=""/></span>
+                        <p>谍影重重</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/7eec3f1687d40e7d27d9522dada41b8e208718.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/87dce3a204a3391bb490288072ed34d6599272.png" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/7eec3f1687d40e7d27d9522dada41b8e208718.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/1c941143ac74b89cf16a4884585131be164722.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/0e3a853a93d342f5d071f5e0867cbfb7518640.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/2d38a7c91ed866af1a08adbee28ffa8a157736.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/__40811615__5745234.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/2fba1ccb397c00611e9951b78379bf541809429.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/1c941143ac74b89cf16a4884585131be164722.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/13592a0502c78c1bdd09c3cbc2f98f8490266.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/48ca0035795cf431bb0b4971f37f49e41862020.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/13592a0502c78c1bdd09c3cbc2f98f8490266.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c">
+                        <img src="../images/48ca0035795cf431bb0b4971f37f49e41862020.jpg" alt=""/>
+                        <p>反贪风暴</p>
+                        <em>8.3</em>
+                    </a>
+                </li> -->
+
+            </ul>
+        </section>
+        <section class="yema">
+            <ul>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">…</a></li>
+                <li><a href="">23802</a></li>
+                <li><a href="">下一页</a></li>
+            </ul>
+        </section>
+    </article>
+<section class="mao">
+    <img src="../images/cat.png" alt="ding"/>
+</section>
+<!--底部-->
+<footer>
+    <p> &copy; 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489-1京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+    <p>北京猫眼文化传媒有限公司</p>
+</footer>
+<script src="./js/movies.js"></script>
+<script src="./js/username.js"></script>
+</body>
+</html>

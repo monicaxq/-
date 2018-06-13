@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/shouye.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    
+    
+</head>
+<body>
+<!--导航-->
+    <header>
+        <nav>
+            <div class="daohang_1">
+                <a href="shouye.html"><img src="./images/logo_s.png" alt=""/></a>
+                <select name="citu" id="">
+                    <option value="CD">成都</option>
+                    <option value="MY">绵阳</option>
+                    <option value="YB">宜宾</option>
+                    <option value="LZ">泸州</option>
+                    <option value="DY">德阳</option>
+                </select>
+            </div>
+            <div class="daohang_2">
+                <ul>
+                    <li><a href="shouye.html">首页</a></li>
+                    <li><a href="dianying.html">电影</a></li>
+                    <li><a href="bangdan.html">榜单</a></li>
+                    <li><a href="zixun.html">热点</a></li>
+                </ul>
+            </div>
+            <div class="daohang_3">
+                <input type="text" placeholder="找影视剧、影人、影院"/><i class="fangdajing"></i>
+                <a ><img src="./images/yonghutouxiang.png" alt=""/></a>
+                <!-- <a ><i class="xiajiantou"></i></a> -->
+                <ul id="user">
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--s上-->
+     <article class="shang" id="banner">
+         <ul>
+             <li><a href="zixun.html"><img src="./images/arrows.png" alt=""/></a></li>
+             <li><a href="xiangqing.html"><img src="./images/banner_01.png" alt=""/></a></li>
+             <li><a href="xiangqing.html"><img src="./images/banner_02.png" alt=""/></a></li>
+             <li><a href="xiangqing.html"><img src="./images/banner_03.png" alt=""/></a></li>
+             <li><a href="#d"><img src="./images/banner_04.png" alt=""/></a></li>
+             <li><a href="#d"><img src="./images/banner_05.png" alt=""/></a></li>
+             <li><a href="#d"><img src="./images/banner_06.png" alt=""/></a></li>
+             <li><a href=""><img src="./images/arrows.png" alt=""/></a></li>
+         </ul>
+     </article>
+<!--下-->
+    <article class="xia">
+        <div class="xia_zuo">
+            <section class="yingpian">
+                <p><span>正在热映（55部）</span><a href="#s">全部 &gt;</a></p>
+                <ul id="hotmovie">
+                    <!-- <li>
+                        <a href="xiangqing.html">
+                            <img src="./images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                            <p> <span>港囧</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="xiangqing.html">
+                            <img src="./images/7f004865bcc665ebc87ed558f5ab64e9751087.jpg" alt=""/>
+                            <p> <span>会痛的十七岁</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#c">
+                            <img src="./images/7eec3f1687d40e7d27d9522dada41b8e208718.jpg" alt=""/>
+                            <span><img src="./images/3dmax.png" alt=""/></span>
+                            <p> <span>蝴蝶之墓</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/d89452ac8b7e8f3630b56e525deb1c1c2202248.jpg" alt=""/>
+                            <p> <span>推理笔记</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/ac38cbff84740d1eca939ddfb94c8087221926.jpg" alt=""/>
+                            <span><img src="./images/3dmax.png" alt=""/></span>
+                            <p> <span>真假深林之王</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/6b3b18b80d633e6a5681ce47262922cd1047468.jpg" alt=""/>
+                            <p> <span>无二不作</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                            <p> <span>港囧</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/36763805c544e93160d0df74b612f5e9622163.jpg" alt=""/>
+                            <p> <span>声之形</span><em>8.3</em></p>
+                            <p>购票</p>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+<!--即将上映-->
+            <section class="shangying">
+                <p><span>即将上映（255部）</span><a href="#s">全部 &gt;</a></p>
+                <ul class="yugao" id="beOn">
+                        <!-- <li>
+                            <a href="xiangqing.html">
+                                <img src="./images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                                <p> <span>反贪风暴</span><em>8.3</em></p>
+                                <p>134人想看</p>
+                                <p><span>预告片</span><span>预售</span></p>
+                            </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/40d65978f6dba2aa5bfe5406d82c144a4448818.jpg" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/9b57ae0bdc2ddcbea51d8e0d7118857d5020142.jpg" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/48ca0035795cf431bb0b4971f37f49e41862020.jpg" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/078ac6fba8e4ecef3cd232ff01ee83eb103309.jpg" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/8ff9675ab73cdc31a9714a918a9a83d7223841.png" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li>
+                    <li>
+                        <a href="#c">
+                            <img src="./images/aea9291ff4c41e074e2edc2a2d9b20f9500507.jpg" alt=""/>
+                            <p> <span>反贪风暴</span><em>8.3</em></p>
+                            <p>134人想看</p>
+                            <p><span>预告片</span><span>预售</span></p>
+                        </a>
+                        <p>10月26日上映</p>
+                    </li> -->
+                </ul>
+            </section>
+
+
+            <section class="rebo">
+                <div>
+                    <span>热播电影</span>
+                    <ul>
+                        <li><a href="#s">爱情</a></li>
+                        <li><a href="#s">喜剧</a></li>
+                        <li><a href="">动作</a></li>
+                        <li><a href="">恐怖</a></li>
+                        <li><a href="">动画</a></li>
+                    </ul>
+                    <a href="#s">全部 &gt;</a>
+                </div>
+                <ul class="re_dian" id="hotplay">
+                    <!-- <li>
+                        <a href="#">
+                            <img src="./images/af6b8d2473c6c7adc3784f1a26e3c16f2323292.jpg" alt=""/>
+                            <p><span>战狼</span><i>9.3</i></p>
+                         </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/8ff9675ab73cdc31a9714a918a9a83d7223841.png" alt=""/>
+                             <p><span>战狼</span><i>9.3</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/9b57ae0bdc2ddcbea51d8e0d7118857d5020142.jpg" alt=""/>
+                            <p><span>战狼</span><i>9.3</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/41ebecd825ffe37afd93687d480de1f1639738.png" alt=""/>
+                            <p><span>战狼</span><i>9.3</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/a21282b0553f315e1b15df98f70d6f5c912588.png" alt=""/>
+                            <p><span>战狼</span><i>9.3</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/acfd524fb61272a1db1d1c5bf44a260620955040.jpg" alt=""/>
+                            <p><span>战狼</span><i>9.3</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/238dc901c5175ebac19294634fed4060592645.png" alt=""/>
+                            <p><span>战狼</span><i>9.3</i></p>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+        </div>
+        <!--右边-->
+        <div class="xia_you">
+            <section class="piaofang">
+                <p>今日票房</p>
+                <ul id="box_office">
+                    <!-- <li>
+                        <a href="#s">
+                            <img src="./images/5fe50b41d4d99a3e26b5ebd8464d519f272743.png" alt=""/>
+                                <span>机械师2：复活</span>
+                                <span>5203.38万</span>
+                        </a>
+                    </li> -->
+<!-- 
+                    <li>
+                        <a href="#s">
+                           <i>2</i><span>惊天破</span><span>2023.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>3</i><span>湄公河行动</span><span>1198.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>4</i><span>侠探杰克：永不回头</span><span>1063.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>5</i><span>龙珠复活的弗利沙</span><span>202.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>6</i><span>从你的全世界路过</span><span>222.04万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>7</i><span>圆梦巨人</span><span>174.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>8</i><span>凶手还不睡</span><span>55.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>9</i><span>勇士</span><span>20.35万</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>10</i><span>惊天破</span><span>18.00万</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+            <section class="dapan">
+                <p>今日大盘</p>
+                <div>
+                    <p><span><span>1.03</span>亿</span><a href="">查看更多</a></p>
+
+                    <p>北京时间22:46:26  猫眼专业版实时票房数据</p>
+                </div>
+            </section>
+            <!--zuishouqidai-->
+            <section class="qidai">
+                <p><span>最受期待</span><a href="#s">查看完整榜单 &gt;</a></p>
+                <ul id="mostexpect">
+                    <!-- <li>
+                        <a href="">
+                            <img src="./images/3a4f9d6e3c48326d4ae4fe3ed8c973e1584222.jpg" alt="d"/>
+                            <div>
+                                <p>三生三世十里桃花</p>
+                                <p>上映时间：2016</p>
+                                <p>212184人想看</p>
+                            </div>
+                         </a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#s">
+                            <img src="./images/2d52f6932ca2f47871ca27801c71e4cf98763 (2).jpg" alt="d"/>
+                            <div>
+                                <p>奇异博士</p>
+                                <span>212184人想看</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <img src="./images/9b624bac739f2a85f6029a716dc87eba282694.jpg" alt="d"/>
+                            <div>
+                                <p>敢问路在何方</p>
+                                <span>212184人想看</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>4</i><span>你的名字</span><span>353232人想看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>5</i><span>我不是潘金莲</span><span>7564543人想看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>6</i><span>长城</span><span>242422人想看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>7</i><span>大闹天竺</span><span>635352人想看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>8</i><span>最萌身高差</span><span>441313人想看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>8</i><span>但丁密码</span><span>534231人想看</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s">
+                            <i>10</i><span>28岁未成年</span><span>6453人想看</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+            <section class="top">
+                <p><span>TOP 100</span> <a href="">查看完整榜单 &gt;</a></p>
+                <ul id="topoh">
+                    <!-- <li>
+                        <a href="#s">
+                            <img src="./images/5fe50b41d4d99a3e26b5ebd8464d519f272743.png" alt=""/>
+                            <span>霸王别姬</span>
+                            <span>9.6分</span>
+                        </a>
+                    </li> -->
+
+                    <!-- <li>
+                        <a href="#s">
+                            <i>2</i><span>肖生克的救赎</span><span>9.5分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>3</i><span>这个杀手不太冷</span><span>9.5分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>4</i><span>惊天破</span><span>9.5分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>5</i><span>惊天破</span><span>9.1分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>6</i><span>惊天破</span><span>9.4分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>7</i><span>龙猫</span><span>9.2分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>8</i><span>教父</span><span>9.3分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>9</i><span>惊天破</span><span>9.2分</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#s">
+                            <i>10</i><span>千与千寻</span><span>9.7分</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </section>
+        </div>
+    </article>
+<section class="mao">
+    <img src="./images/cat.png" alt="ding"/>
+</section>
+<!--底部-->
+<footer>
+    <p> &copy; 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489-1京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+    <p>北京猫眼文化传媒有限公司</p>
+</footer>
+<script src="./js/shouye.js"></script>
+<script src="./js/username.js"></script>
+</body>
+</html>
